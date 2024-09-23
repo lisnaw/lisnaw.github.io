@@ -8,102 +8,76 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.css">
-    <style>
-        /* Gaya untuk mode gelap */
-        .dark-mode {
-            background-color: #626262;
-            color: #b8b4b4;
-        }
-
-        .dark-mode .navbar {
-            background-color: #8e0909;
-        }
-
-        .dark-mode .btn-primary {
-            background-color: #330170;
-            border-color: #bb86fc;
-        }
-
-        .dark-mode .form-control {
-            background-color: #333;
-            color: #ffffff;
-        }
-
-        .dark-mode .form-label {
-            color: #ffffff;
-        }
-
-        .dark-mode .bg-section {
-            background-color: #1e1e1e;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"
-        style="background-color: rgba(255, 255, 255, 0.5); box-shadow: 0 4px 6px rgba(117, 58, 58, 0.1); position: fixed; top: 0; left: 0; width: 100%; z-index: 999;">
-        <div class="container">
-            <a class="navbar-brand font-weight-bold text-danger" href="#">
-                <img src="logo.jpg" alt="Tyy.Eliss"
-                    style="width: 30px; height: 30px; position: relative; transform: translateY(-10px);">
-                Tyy.Elissೀ⋆｡🌷</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#container"
-                            style="font-size: 16px; font-weight: 500; color: #383838;">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tentang-saya"
-                            style="font-size: 16px; font-weight: 500; color: #383838;">Tentang Saya</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portofolio"
-                            style="font-size: 16px; font-weight: 500; color: #383838;">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#clients"
-                            style="font-size: 16px; font-weight: 500; color: #383838;">Clients</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog"
-                            style="font-size: 16px; font-weight: 500; color: #383838;">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"
-                            style="font-size: 16px; font-weight: 500; color: #383838;">Contact</a></li>
-                </ul>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"
+            style="background-color: rgba(255, 255, 255, 0.5); box-shadow: 0 4px 6px rgba(117, 58, 58, 0.1); position: fixed; top: 0; left: 0; width: 100%; z-index: 999;">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold text-danger" href="#">
+                    <img src="logo.jpg" alt="Tyy.Eliss"
+                        style="width: 30px; height: 30px; position: relative; transform: translateY(-10px);">
+                    Tyy.Elissೀ⋆｡🌷</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#container"
+                                style="font-size: 16px; font-weight: 500; color: #383838;">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tentang-saya"
+                                style="font-size: 16px; font-weight: 500; color: #383838;">Tentang Saya</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portofolio"
+                                style="font-size: 16px; font-weight: 500; color: #383838;">Portofolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#clients"
+                                style="font-size: 16px; font-weight: 500; color: #383838;">Clients</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog"
+                                style="font-size: 16px; font-weight: 500; color: #383838;">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"
+                                style="font-size: 16px; font-weight: 500; color: #383838;">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <button class="btn btn-outline-secondary" id="toggleMode" style="margin-left: 20px;">Toggle Dark
-                Mode</button>
-        </div>
-    </nav>
+        </nav>
 
 
-
-<!-- About us -->
-<section id="container" style="width: 100%; padding: 6px 0; color: rgb(125, 91, 91);">
-    <div class="container">
-        <div class="row">
-        <div class="col-md-6" style="padding-left: 50px; padding-right: 20px; padding-top: 100px; margin-top: 50px;">
-            <h2>────୨Hallow Gaesৎ────</h2>
-            <h3>Perkenalkan saya, <b>Lisnawati</b></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-            <a href="#tentang-saya" class="btn btn-primary" style="background-color: rgb(204, 168, 124);">More About Me</a>
-        </div>
-
-            <div class="col-md-6">
-                <img src="fotosaya.png" alt="Foto saya" class="img-fluid rounded-circle">
-            </div>
-        </div>
-    </div>
-</section>
-
-         <!-- Tentang Saya Section -->
-    <section id="tentang-saya" style="background: rgb(225, 208, 208); background-size: cover;">
+    <!-- About us -->
+    <section id="container" style="width: 100%; padding: 6px 0; color: #7d5b5b;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="padding-left: 50px; padding-right: 80px;">
+                <div class="col-md-6"
+                    style="padding-left: 50px; padding-right: 20px; padding-top: 100px; margin-top: 50px;">
+                    <h2>────୨Hallow Gaesৎ────</h2>
+                    <h3>Perkenalkan saya, <b>Lisnawati</b></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo
+                        consequat.</p>
+                    <a href="#tentang-saya" class="btn btn-outline-secondary"
+                        style="background-color: rgb(204, 168, 124);">More About Me</a>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="fotosaya.png" alt="Foto saya" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="tentang-saya" style="background: rgb(225, 208, 208);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="padding-left: 50px; padding-right: 80px; padding: 60px 0;">
                     <h3 style="color: #aa7676;">TENTANG SAYA</h3>
-                    <h2 style="font-size: 36px; font-weight: bold;">Belajar Web Programing Biar Apa Cenah? ヾ( ˃ᴗ˂ )◞ • *✰
+                    <h2 style="font-size: 36px; font-weight: bold;">Belajar Web Programing Biar Apa Cenah? ヾ( ˃ᴗ˂ )◞ •
+                        *✰
                     </h2>
-                    <p style="font-size: 20px; color: #777;">"Biar bisa pamer ke temen: ‘lihat, aku bikin website’ padahal
+                    <p style="font-size: 20px; color: #777;">"Biar bisa pamer ke temen: ‘lihat, aku bikin website’
+                        padahal
                         cuma ada tulisan ‘Hello World’!"</p>
                 </div>
                 <div class="col-md-6"
@@ -111,7 +85,8 @@
                     <img src="fotosaya2.jpg" alt="Profile Photo"
                         style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; margin-bottom: 20px;">
                     <h2 style="font-size: 24px; font-weight: bold;">Mari berteman Gaesৎ────</h2>
-                    <p style="color: #777;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, iure? Facilis
+                    <p style="color: #777;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, iure?
+                        Facilis
                         aut sequi officia dolore debitis nihil. Soluta!</p>
 
                     <!-- link icon sosmed -->
@@ -132,185 +107,214 @@
         </div>
     </section>
 
-        <!-- Portfolio -->
-    <section id="portofolio" style="width: 100%; padding: 60px 0; ">
+    <!-- Portfolio -->
+    <section id="portofolio" style="width: 100%; padding: 60px 0;">
         <div class="container">
             <h2 class="text-center mb-5" style="color: #aa7676;">Portfolio</h2>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet, nunc id suscipit
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet, nunc id
+                suscipit
                 malesuada, augue justo elementum lectus, ac tincidunt tellus nunc a metus.</p>
             <div class="row">
                 <!-- Foto1 -->
                 <div class="col-md-4 mb-4">
-                    <img src="forto1PNG.PNG" class="img-fluid rounded" alt="House Of Learning">
-                    <h5 class="mt-3">Membuat Tampilan</h5>
-                    <p>Project Membuat Tanpilan Sederhana</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem recusandae eveniet</p>
+                    <div style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)';"
+                        onmouseout="this.style.transform='scale(1)';">
+                        <img src="forto1PNG.PNG" class="img-fluid rounded" alt="House Of Learning">
+                        <h5 class="mt-3">Membuat Tampilan</h5>
+                        <p>Project Membuat Tampilan Sederhana</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem recusandae eveniet
+                        </p>
+                    </div>
                 </div>
                 <!-- Foto2 -->
                 <div class="col-md-4 mb-4">
-                    <img src="forto2.PNG" class="img-fluid rounded" alt="Web Course Reactjs">
-                    <h5 class="mt-3">Galery</h5>
-                    <p>project CSS-LAYOUTING membuat tampilan Galery Foto</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias provident quia reprehenderit deserunt recusandae, magni voluptatem culpa laudantium dolorem aliquid sequi quibusdam,</p>
+                    <div style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)';"
+                        onmouseout="this.style.transform='scale(1)';">
+                        <img src="forto2.PNG" class="img-fluid rounded" alt="Web Course Reactjs">
+                        <h5 class="mt-3">Galery</h5>
+                        <p>Project CSS-LAYOUTING membuat tampilan Galery Foto</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias provident quia reprehenderit
+                            deserunt recusandae, magni voluptatem culpa laudantium dolorem aliquid sequi quibusdam,</p>
+                    </div>
                 </div>
-
                 <!-- Foto3 -->
                 <div class="col-md-4 mb-4">
-                    <img src="porto3.PNG" class="img-fluid rounded" alt="Landing Page">
-                    <h5 class="mt-3">From Login</h5>
-                    <p>project membuat From login </p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ducimus quaerat nam consectetur quibusdam quod culpa consequuntur doloremque. Ducimus adipisci corrupti enim voluptate. Est voluptas ullam id, molestias delectus nulla!</p>
+                    <div style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)';"
+                        onmouseout="this.style.transform='scale(1)';">
+                        <img src="porto3.PNG" class="img-fluid rounded" alt="Landing Page">
+                        <h5 class="mt-3">From Login</h5>
+                        <p>Project membuat From login</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ducimus quaerat nam
+                            consectetur quibusdam quod culpa consequuntur doloremque. Ducimus adipisci corrupti enim
+                            voluptate. Est voluptas ullam id, molestias delectus nulla!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clients  -->
-<section id="clients" style="padding: 60px 0; background-color: #1c2234;">
-    <div class="container text-center">
-        <h5 class="text-uppercase" style="color: #aa7676;">Clients</h5>
-        <h2 class="mb-4" style="color: #fff;">Yang Pernah Bekerjasama</h2>
-        <p class="mb-5" style="color: #b0bec5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda minima repudiandae minus dicta asperiores? Eum cupiditate voluptatem obcaecati ratione officiis deleniti, qui architecto commodi aut consequatur deserunt blanditiis, dignissimos est!
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-6 mb-4 d-flex justify-content-center align-items-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"
-                    class="img-fluid" style="max-width: 150px; height: auto;">
+
+    <!-- clients -->
+    <section id="clients" style="padding: 60px 0; background-color: #1c2234;">
+        <div class="container text-center">
+            <h5 class="text-uppercase" style="color: #aa7676;">Clients</h5>
+            <h2 class="mb-4" style="color: #fff;">Yang Pernah Bekerjasama</h2>
+            <p class="mb-5" style="color: #b0bec5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
+                minima repudiandae minus dicta asperiores? Eum cupiditate voluptatem obcaecati ratione officiis
+                deleniti,
+                qui architecto commodi aut consequatur deserunt blanditiis, dignissimos est!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-6 mb-4 d-flex justify-content-center align-items-center">
+                    <a href="https://www.google.com" target="_blank"
+                        style="display: inline-block; transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"
+                            class="img-fluid" style="max-width: 150px; height: auto;">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-
-
+    </section>
 
     <!-- blog -->
-<section id="blog" style="padding: 60px 0; background-color: #a7a191;">
-    <div class="container">
-        <h2 class="text-center mb-5" style="color: #aa7676;">Blog</h2>
-        <p style="text-align: center;">"Mendesain dengan Hati: Proses Kreatif di Balik Setiap Karya"</p>
-        <div class="row">
-            <!-- Artikel 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card" style="border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="canva.png" class="card-img-top" alt="Tutorial Desain"
-                        style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Canva</h5>
-                        <p class="card-text">Pelajari tren desain grafis yang sedang populer dan cara mengaplikasikannya
-                            dalam proyek Anda.</p>
-                        <a href="https://www.canva.com/" class="btn btn-primary">Baca Selengkapnya</a>
+    <section id="blog" style="padding: 60px 0; background-color: #d7baba;">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #aa7676;">Blog</h2>
+            <p style="text-align: center;">"Mendesain dengan Hati: Proses Kreatif di Balik Setiap Karya"</p>
+            <div class="row d-flex align-items-stretch">
+                <!-- Artikel 1 -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="card h-100"
+                        style="border: 1px solid #ddd; border-radius: 8px; transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+                        <img src="canva.png" class="card-img-top" alt="Tutorial Desain"
+                            style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Canva</h5>
+                            <p class="card-text">Pelajari tren desain grafis yang sedang populer dan cara
+                                mengaplikasikannya dalam proyek Anda.</p>
+                            <a href="https://www.canva.com/" class="btn btn-outline-secondary">Baca Selengkapnya</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Artikel 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card" style="border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="figma.jpg" class="card-img-top" alt="Tutorial Desain"
-                        style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Figma</h5>
-                        <p class="card-text">Ikuti langkah-langkah sederhana untuk membuat desain grafis yang menarik
-                            dengan alat desain.</p>
-                        <a href="https://www.figma.com/community/file/1291927951491741590/ui-design-trend"
-                            class="btn btn-primary">Baca Selengkapnya</a>
+                <!-- Artikel 2 -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="card h-100"
+                        style="border: 1px solid #ddd; border-radius: 8px; transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+                        <img src="figma.jpg" class="card-img-top" alt="Tutorial Desain"
+                            style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Figma</h5>
+                            <p class="card-text">Ikuti langkah-langkah sederhana untuk membuat desain grafis yang
+                                menarik dengan alat desain.</p>
+                            <a href="https://www.figma.com/community/file/1291927951491741590/ui-design-trend"
+                                class="btn btn-outline-secondary">Baca Selengkapnya</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Artikel 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card" style="border: 1px solid #ddd; border-radius: 8px;">
-                    <img src="photoshop.png" class="card-img-top" alt="Tips Desain Grafis"
-                        style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Aplikasi Photoshop</h5>
-                        <p class="card-text">Dapatkan tips berharga untuk meningkatkan keterampilan desain grafis Anda.
-                        </p>
-                        <a href="https://adobe-photoshop.softonic-id.com/" class="btn btn-primary">Baca Selengkapnya</a>
+                <!-- Artikel 3 -->
+                <div class="col-md-4 mb-4 d-flex">
+                    <div class="card h-100"
+                        style="border: 1px solid #ddd; border-radius: 8px; transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+                        <img src="photoshop.png" class="card-img-top" alt="Tips Desain Grafis"
+                            style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Aplikasi Photoshop</h5>
+                            <p class="card-text">Dapatkan tips berharga untuk meningkatkan keterampilan desain grafis
+                                Anda.</p>
+                            <a href="https://adobe-photoshop.softonic-id.com/" class="btn btn-outline-secondary">Baca
+                                Selengkapnya</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
 
     <!-- format contact -->
-<section id="contact" style="padding: 60px 0;">
-    <div class="container">
-        <h5 class="text-center mb-4" style="color: #aa7676;">Contact</h5>
-        <h2 class="text-center mb-5"><b>Hubungi Saya</b></h2>
-        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum eveniet
-            praesentium nesciunt aliquam molestias ut eos! Magni, praesentium fugit. Illum fuga expedita fugiat
-            voluptates cum voluptate sapiente est laborum?</p>
-        <form>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="name" class="form-label"><b>Name</b></label>
-                    <input type="text" class="form-control" id="name" style="background-color: #dac2c2;"
-                        placeholder="Masukkan Nama" required>
+    <section id="contact" style="padding: 60px 0;">
+        <div class="container">
+            <h5 class="text-center mb-4" style="color: #aa7676;">Contact</h5>
+            <h2 class="text-center mb-5"><b>Hubungi Saya</b></h2>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum eveniet
+                praesentium nesciunt aliquam molestias ut eos! Magni, praesentium fugit. Illum fuga expedita fugiat
+                voluptates cum voluptate sapiente est laborum?</p>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label"><b>Name</b></label>
+                        <input type="text" class="form-control" id="name" style="background-color: #dac2c2;"
+                            placeholder="Masukkan Nama" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label"><b>Email</b></label>
+                        <input type="email" class="form-control" id="email" style="background-color: #dac2c2;"
+                            placeholder="Masukkan Email" required>
+                    </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <label for="email" class="form-label"><b>Email</b></label>
-                    <input type="email" class="form-control" id="email" style="background-color: #dac2c2;"
-                        placeholder="Masukkan Email" required>
+                <div class="mb-3">
+                    <label for="subject" class="form-label"><b>Subject</b></label>
+                    <input type="text" class="form-control" id="subject" style="background-color: #dac2c2;"
+                        placeholder="Masukkan Subject" required>
                 </div>
-            </div>
-            <div class="mb-3">
-                <label for="subject" class="form-label"><b>Subject</b></label>
-                <input type="text" class="form-control" id="subject" style="background-color: #dac2c2;"
-                    placeholder="Masukkan Subject" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label"><b>Message</b></label>
-                <textarea class="form-control" id="message" style="background-color: #dac2c2;" rows="4"
-                    placeholder="Masukkan Pesan" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary"
-                style="background-color: #b995b5; border: none;">Kirim</button>
-        </form>
-    </div>
-</section>
+                <div class="mb-3">
+                    <label for="message" class="form-label"><b>Message</b></label>
+                    <textarea class="form-control" id="message" style="background-color: #dac2c2;" rows="4"
+                        placeholder="Masukkan Pesan" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"
+                    style="background-color: #b995b5; border: none;">Kirim</button>
+            </form>
+        </div>
+    </section>
 
-
-
-</section>
-<!-- Footer -->
-<footer class="bg-dark text-white text-center text-lg-start">
-    <div class="container p-4">
-        <!-- Bagian Sosial Media -->
-        <section class="mb-4">
-            <div class="text-center">
-                <a href="https://github.com/lisnaw">
-                    <span class="bi-github" style="width: 30px; margin-right: 10px; font-size: 30px;"></span>
-                </a>
-                <a href="https://instagram.com/tyy.eliss__">
-                    <span class="bi-instagram" style="width: 30px; margin-right: 10px; font-size: 30px;"></span>
-                </a>
-                <a href="https://bi-whatsapp.com/lisnaw">
-                    <span class="bi-whatsapp" style="width: 30px; margin-right: 10px; font-size: 30px;"></span>
-                </a>
-            </div>
-        </section>
-    </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <div class="container p-4">
+            <!-- Bagian Sosial Media -->
+            <section class="mb-4">
+                <div class="text-center">
+                    <a href="https://github.com/lisnaw">
+                        <span class="bi-github" style="width: 30px; margin-right: 10px; font-size: 30px;"></span>
+                    </a>
+                    <a href="https://instagram.com/tyy.eliss__">
+                        <span class="bi-instagram" style="width: 30px; margin-right: 10px; font-size: 30px;"></span>
+                    </a>
+                    <a href="https://bi-whatsapp.com/lisnaw">
+                        <span class="bi-whatsapp" style="width: 30px; margin-right: 10px; font-size: 30px;"></span>
+                    </a>
+                </div>
+            </section>
+        </div>
 
         <!-- Copyright -->
         <div class="text-center p-3">
             © 2024 Copyright:
             <a class="text-white" href="instagram.com/tyy.eliss__">@tyy.eliss__</a>
         </div>
-    </div>
-</footer>
+        </div>
+    </footer>
 
-<!-- JavaScript untuk mode gelap/terang -->
-<script>
-    const toggleModeButton = document.getElementById('toggleMode');
-    const bodyElement = document.body;
-    toggleModeButton.addEventListener('click', function () {
-        bodyElement.classList.toggle('dark-mode'); // Tambahkan/hapus kelas 'dark-mode' pada body
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                var navbarToggler = document.querySelector('.navbar-toggler');
+                var navbarCollapse = document.querySelector('.navbar-collapse');
+
+                if (navbarToggler && navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
+        });
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
