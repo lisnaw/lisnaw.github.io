@@ -8,35 +8,6 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.css">
-    <style>
-        /* Gaya untuk mode gelap */
-        .dark-mode {
-            background-color: #626262;
-            color: #b8b4b4;
-        }
-
-        .dark-mode .navbar {
-            background-color: #8e0909;
-        }
-
-        .dark-mode .btn-primary {
-            background-color: #330170;
-            border-color: #bb86fc;
-        }
-
-        .dark-mode .form-control {
-            background-color: #333;
-            color: #ffffff;
-        }
-
-        .dark-mode .form-label {
-            color: #ffffff;
-        }
-
-        .dark-mode .bg-section {
-            background-color: #1e1e1e;
-        }
-    </style>
 </head>
 
 <body>
@@ -67,10 +38,6 @@
                     <li class="nav-item"><a class="nav-link" href="#contact"
                             style="font-size: 16px; font-weight: 500; color: #383838;">Contact</a></li>
                 </ul>
-            </div>
-            <button class="btn btn-outline-secondary" id="toggleMode" style="margin-left: 20px;">Toggle Dark
-                Mode</button>
-        </div>
     </nav>
 
 
@@ -99,7 +66,7 @@
     <section id="tentang-saya" style="background: rgb(225, 208, 208); background-size: cover;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="padding-left: 50px; padding-right: 80px;">
+                <div class="col-md-6" style="padding-left: 50px; padding-right: 80px; padding: 60px 0;">
                     <h3 style="color: #aa7676;">TENTANG SAYA</h3>
                     <h2 style="font-size: 36px; font-weight: bold;">Belajar Web Programing Biar Apa Cenah? ヾ( ˃ᴗ˂ )◞ • *✰
                     </h2>
@@ -302,15 +269,6 @@
         </div>
     </div>
 </footer>
-
-<!-- JavaScript untuk mode gelap/terang -->
-<script>
-    const toggleModeButton = document.getElementById('toggleMode');
-    const bodyElement = document.body;
-    toggleModeButton.addEventListener('click', function () {
-        bodyElement.classList.toggle('dark-mode'); // Tambahkan/hapus kelas 'dark-mode' pada body
-    });
-</script>
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
