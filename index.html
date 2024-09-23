@@ -8,6 +8,35 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <style>
+        /* Gaya untuk mode gelap */
+        .dark-mode {
+            background-color: #626262;
+            color: #b8b4b4;
+        }
+
+        .dark-mode .navbar {
+            background-color: #8e0909;
+        }
+
+        .dark-mode .btn-primary {
+            background-color: #330170;
+            border-color: #bb86fc;
+        }
+
+        .dark-mode .form-control {
+            background-color: #333;
+            color: #ffffff;
+        }
+
+        .dark-mode .form-label {
+            color: #ffffff;
+        }
+
+        .dark-mode .bg-section {
+            background-color: #1e1e1e;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,12 +67,16 @@
                     <li class="nav-item"><a class="nav-link" href="#contact"
                             style="font-size: 16px; font-weight: 500; color: #383838;">Contact</a></li>
                 </ul>
+            </div>
+            <button class="btn btn-outline-secondary" id="toggleMode" style="margin-left: 20px;">Toggle Dark
+                Mode</button>
+        </div>
     </nav>
 
 
 
 <!-- About us -->
-<section id="container" style="width: 100%; padding: 6px 0; color: #7d5b5b;">
+<section id="container" style="width: 100%; padding: 6px 0; color: rgb(125, 91, 91);">
     <div class="container">
         <div class="row">
         <div class="col-md-6" style="padding-left: 50px; padding-right: 20px; padding-top: 100px; margin-top: 50px;">
@@ -52,7 +85,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
-            <a href="#tentang-saya" class="btn btn-outline-secondary" style="background-color: rgb(204, 168, 124);">More About Me</a>
+            <a href="#tentang-saya" class="btn btn-primary" style="background-color: rgb(204, 168, 124);">More About Me</a>
         </div>
 
             <div class="col-md-6">
@@ -63,10 +96,10 @@
 </section>
 
          <!-- Tentang Saya Section -->
-    <section id="tentang-saya" style="background: rgb(225, 208, 208);">
+    <section id="tentang-saya" style="background: rgb(225, 208, 208); background-size: cover;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6" style="padding-left: 50px; padding-right: 80px; padding: 60px 0;">
+                <div class="col-md-6" style="padding-left: 50px; padding-right: 80px;">
                     <h3 style="color: #aa7676;">TENTANG SAYA</h3>
                     <h2 style="font-size: 36px; font-weight: bold;">Belajar Web Programing Biar Apa Cenah? ヾ( ˃ᴗ˂ )◞ • *✰
                     </h2>
@@ -100,116 +133,99 @@
     </section>
 
         <!-- Portfolio -->
-        <section id="portofolio" style="width: 100%; padding: 60px 0;">
-            <div class="container">
-                <h2 class="text-center mb-5" style="color: #aa7676;">Portfolio</h2>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet, nunc id suscipit
-                    malesuada, augue justo elementum lectus, ac tincidunt tellus nunc a metus.</p>
-                <div class="row">
-                    <!-- Foto1 -->
-                    <div class="col-md-4 mb-4">
-                        <div style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)';"
-                            onmouseout="this.style.transform='scale(1)';">
-                            <img src="forto1PNG.PNG" class="img-fluid rounded" alt="House Of Learning">
-                            <h5 class="mt-3">Membuat Tampilan</h5>
-                            <p>Project Membuat Tampilan Sederhana</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem recusandae eveniet</p>
-                        </div>
-                    </div>
-                    <!-- Foto2 -->
-                    <div class="col-md-4 mb-4">
-                        <div style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)';"
-                            onmouseout="this.style.transform='scale(1)';">
-                            <img src="forto2.PNG" class="img-fluid rounded" alt="Web Course Reactjs">
-                            <h5 class="mt-3">Galery</h5>
-                            <p>Project CSS-LAYOUTING membuat tampilan Galery Foto</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias provident quia reprehenderit
-                                deserunt recusandae, magni voluptatem culpa laudantium dolorem aliquid sequi quibusdam,</p>
-                        </div>
-                    </div>
-                    <!-- Foto3 -->
-                    <div class="col-md-4 mb-4">
-                        <div style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)';"
-                            onmouseout="this.style.transform='scale(1)';">
-                            <img src="porto3.PNG" class="img-fluid rounded" alt="Landing Page">
-                            <h5 class="mt-3">From Login</h5>
-                            <p>Project membuat From login</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ducimus quaerat nam
-                                consectetur quibusdam quod culpa consequuntur doloremque. Ducimus adipisci corrupti enim
-                                voluptate. Est voluptas ullam id, molestias delectus nulla!</p>
-                        </div>
-                    </div>
+    <section id="portofolio" style="width: 100%; padding: 60px 0; ">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #aa7676;">Portfolio</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet, nunc id suscipit
+                malesuada, augue justo elementum lectus, ac tincidunt tellus nunc a metus.</p>
+            <div class="row">
+                <!-- Foto1 -->
+                <div class="col-md-4 mb-4">
+                    <img src="forto1PNG.PNG" class="img-fluid rounded" alt="House Of Learning">
+                    <h5 class="mt-3">Membuat Tampilan</h5>
+                    <p>Project Membuat Tanpilan Sederhana</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem recusandae eveniet</p>
+                </div>
+                <!-- Foto2 -->
+                <div class="col-md-4 mb-4">
+                    <img src="forto2.PNG" class="img-fluid rounded" alt="Web Course Reactjs">
+                    <h5 class="mt-3">Galery</h5>
+                    <p>project CSS-LAYOUTING membuat tampilan Galery Foto</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias provident quia reprehenderit deserunt recusandae, magni voluptatem culpa laudantium dolorem aliquid sequi quibusdam,</p>
+                </div>
+
+                <!-- Foto3 -->
+                <div class="col-md-4 mb-4">
+                    <img src="porto3.PNG" class="img-fluid rounded" alt="Landing Page">
+                    <h5 class="mt-3">From Login</h5>
+                    <p>project membuat From login </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ducimus quaerat nam consectetur quibusdam quod culpa consequuntur doloremque. Ducimus adipisci corrupti enim voluptate. Est voluptas ullam id, molestias delectus nulla!</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-    <!-- clients -->
+    <!-- Clients  -->
 <section id="clients" style="padding: 60px 0; background-color: #1c2234;">
     <div class="container text-center">
         <h5 class="text-uppercase" style="color: #aa7676;">Clients</h5>
         <h2 class="mb-4" style="color: #fff;">Yang Pernah Bekerjasama</h2>
-        <p class="mb-5" style="color: #b0bec5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-            minima repudiandae minus dicta asperiores? Eum cupiditate voluptatem obcaecati ratione officiis deleniti,
-            qui architecto commodi aut consequatur deserunt blanditiis, dignissimos est!</p>
+        <p class="mb-5" style="color: #b0bec5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda minima repudiandae minus dicta asperiores? Eum cupiditate voluptatem obcaecati ratione officiis deleniti, qui architecto commodi aut consequatur deserunt blanditiis, dignissimos est!
         <div class="row justify-content-center">
             <div class="col-md-3 col-6 mb-4 d-flex justify-content-center align-items-center">
-                <a href="https://www.google.com" target="_blank"
-                    style="display: inline-block; transition: transform 0.3s ease;"
-                    onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"
-                        class="img-fluid" style="max-width: 150px; height: auto;">
-                </a>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"
+                    class="img-fluid" style="max-width: 150px; height: auto;">
             </div>
         </div>
     </div>
 </section>
 
-<!-- blog -->
-<section id="blog" style="padding: 60px 0; background-color: #d7baba;">
+
+
+
+    <!-- blog -->
+<section id="blog" style="padding: 60px 0; background-color: #a7a191;">
     <div class="container">
         <h2 class="text-center mb-5" style="color: #aa7676;">Blog</h2>
         <p style="text-align: center;">"Mendesain dengan Hati: Proses Kreatif di Balik Setiap Karya"</p>
-        <div class="row d-flex align-items-stretch">
+        <div class="row">
             <!-- Artikel 1 -->
-            <div class="col-md-4 mb-4 d-flex">
-                <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; transition: transform 0.3s ease;"
-                     onmouseover="this.style.transform='scale(1.1)';" 
-                     onmouseout="this.style.transform='scale(1)';">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="border: 1px solid #ddd; border-radius: 8px;">
                     <img src="canva.png" class="card-img-top" alt="Tutorial Desain"
                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Canva</h5>
-                        <p class="card-text">Pelajari tren desain grafis yang sedang populer dan cara mengaplikasikannya dalam proyek Anda.</p>
-                        <a href="https://www.canva.com/" class="btn btn-outline-secondary">Baca Selengkapnya</a>
+                        <p class="card-text">Pelajari tren desain grafis yang sedang populer dan cara mengaplikasikannya
+                            dalam proyek Anda.</p>
+                        <a href="https://www.canva.com/" class="btn btn-primary">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
             <!-- Artikel 2 -->
-            <div class="col-md-4 mb-4 d-flex">
-                <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; transition: transform 0.3s ease;"
-                     onmouseover="this.style.transform='scale(1.1)';" 
-                     onmouseout="this.style.transform='scale(1)';">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="border: 1px solid #ddd; border-radius: 8px;">
                     <img src="figma.jpg" class="card-img-top" alt="Tutorial Desain"
                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Figma</h5>
-                        <p class="card-text">Ikuti langkah-langkah sederhana untuk membuat desain grafis yang menarik dengan alat desain.</p>
-                        <a href="https://www.figma.com/community/file/1291927951491741590/ui-design-trend" class="btn btn-outline-secondary">Baca Selengkapnya</a>
+                        <p class="card-text">Ikuti langkah-langkah sederhana untuk membuat desain grafis yang menarik
+                            dengan alat desain.</p>
+                        <a href="https://www.figma.com/community/file/1291927951491741590/ui-design-trend"
+                            class="btn btn-primary">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
             <!-- Artikel 3 -->
-            <div class="col-md-4 mb-4 d-flex">
-                <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; transition: transform 0.3s ease;"
-                     onmouseover="this.style.transform='scale(1.1)';" 
-                     onmouseout="this.style.transform='scale(1)';">
+            <div class="col-md-4 mb-4">
+                <div class="card" style="border: 1px solid #ddd; border-radius: 8px;">
                     <img src="photoshop.png" class="card-img-top" alt="Tips Desain Grafis"
                         style="border-top-left-radius: 8px; border-top-right-radius: 8px; height: 200px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Aplikasi Photoshop</h5>
-                        <p class="card-text">Dapatkan tips berharga untuk meningkatkan keterampilan desain grafis Anda.</p>
-                        <a href="https://adobe-photoshop.softonic-id.com/" class="btn btn-outline-secondary">Baca Selengkapnya</a>
+                        <p class="card-text">Dapatkan tips berharga untuk meningkatkan keterampilan desain grafis Anda.
+                        </p>
+                        <a href="https://adobe-photoshop.softonic-id.com/" class="btn btn-primary">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -257,6 +273,8 @@
     </div>
 </section>
 
+
+
 </section>
 <!-- Footer -->
 <footer class="bg-dark text-white text-center text-lg-start">
@@ -284,6 +302,15 @@
         </div>
     </div>
 </footer>
+
+<!-- JavaScript untuk mode gelap/terang -->
+<script>
+    const toggleModeButton = document.getElementById('toggleMode');
+    const bodyElement = document.body;
+    toggleModeButton.addEventListener('click', function () {
+        bodyElement.classList.toggle('dark-mode'); // Tambahkan/hapus kelas 'dark-mode' pada body
+    });
+</script>
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
